@@ -45,13 +45,14 @@ THIRD_PARTY_APPS = [ #new
 LOCAL_APPS = [  #new
     'incidente',
     'users.apps.UsersConfig',
+
 ]
 AUTH_USER_MODEL = 'users.CustomUser'    #new
 INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DEFAULT_APPS   #new
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        'rest_framework.permissions.IsAuthenticated',
     ]
 }
 

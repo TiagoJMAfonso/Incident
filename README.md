@@ -1,12 +1,13 @@
-###Run Server
-#####./manage.py runserver
+**Run Server**
+./manage.py runserver
+``
+***
 
-###Super User
+username :
 
-###username : 
-#####teste
+teste
 
-###Password : 
-#####Qwerty123
+Password :
 
-##more info via mail
+Qwerty123
+

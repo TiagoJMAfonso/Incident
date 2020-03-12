@@ -26,7 +26,7 @@ class Incidente(models.Model):
     update_date = models.DateTimeField()
     estado = models.CharField(max_length=10, null=True, choices=state_choices, default='validar')
     categoria = models.CharField(max_length=20, null=True, choices=category_choices)
-    author = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete= models.CASCADE)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete= models.CASCADE)
 
 
     def __str__(self):

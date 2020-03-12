@@ -1,13 +1,11 @@
-**Run Server**
+**Run Server: **
 ./manage.py runserver
-``
 ***
 
-username :
-
+**username :** 
 teste
-
-Password :
+***
+**Password :**
 
 Qwerty123
 
